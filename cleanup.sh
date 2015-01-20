@@ -1,6 +1,7 @@
-# Copyright(C) 2015 Mitsutoshi NAKANO <bkbin005@rinku.zaq.ne.jp>
-# 
+#! /bin/sh
 # The MIT License (MIT)
+# 
+# Copyright (c) 2015 MitsutoshiNAKANO <bkbin005@rinku.zaq.ne.jp>
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -20,11 +21,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-cmake_minimum_required(VERSION 2.8)
+export PATH=/bin:/usr/bin
 
-project(yo)
-
-add_executable(yo2 yo2.c)
-
-install(PROGRAMS yo DESTINATION bin)
-install(TARGETS yo2 DESTINATION bin)
+rm -rf `cat ./.gitignore`
